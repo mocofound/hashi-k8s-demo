@@ -1,3 +1,7 @@
+variable "gcp_json_credentials" {
+  description = "GCP JSON Credentials"
+}
+
 variable "gcp_region" {
   description = "GCP region, e.g. us-east1"
   default = "us-east1"
