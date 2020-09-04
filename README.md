@@ -33,7 +33,7 @@ cd demo
 
 cat that script if you want to see how to deploy each of the above by hand/manually.
 
-IMPORTANT: This script runs on your local laptop and will connect out to your kubernets cluster via kubectl. You will note that we nohup the kubectl port-forward command several times. This allows us to connect to the Vault and Consul API/GUI ports. 
+IMPORTANT: This script runs on your local laptop and will connect out to your kubernets cluster via kubectl. You will note that we nohup the kubectl port-forward command. This allows us to connect to the Vault and Consul API/GUI ports.
 
 
 ## Teardown
@@ -94,4 +94,9 @@ Add the external IP to your workstations /etc/hosts file
 ```
 #Your /etc/hosts file
 35.202.227.148 go-movies-app.ingress.dc1.consul
+```
+
+Access via the browser or curl
+```
+http://go-movies-app.ingress.dc1.consul:8080
 ```
